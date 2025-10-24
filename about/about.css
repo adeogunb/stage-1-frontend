@@ -1,0 +1,57 @@
+body{
+  font-size: 0.65%;
+  margin: none;
+  padding: 20px;
+  background-color: bisque;
+  padding: 30px;
+}
+
+h2{
+  font-size: 1.7rem;
+}
+h3{
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+
+.about-page{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  min-height: fit-content;
+  display: grid;
+  grid-template-areas: 
+    "bio hello"
+    "goals confidence"
+    "note extra";
+
+  column-gap: 20PX;
+
+}
+
+section{
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+section:hover{
+  transform: scale(102%);
+}
+
+section:nth-child(odd){
+  background-color: black;
+  color: white;
+}
+
+@media (max-width:720px) {
+  .about-page{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
